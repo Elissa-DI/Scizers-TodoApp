@@ -1,6 +1,5 @@
 .all {
     width: 600px;
-    /* height: 400px; */
     margin: 0px 0px 10px 350px;
 }
 h1 {
@@ -86,4 +85,23 @@ th {
 .completed {
 	background-color: #4CAF50;
 	color: white;
+}
+.delete-btn {
+    background-color: red;
+    margin-right: 3px;
+}
+.delete-btn:hover {
+    color: red;
+}
+.edit-btn {
+    background-color: #255275;
+    margin-right: 3px;
+}
+.edit-btn:hover {
+color: #255275;
+}
+#ren-username {
+    font-family: cursive;
+    font-size: 18px;
+    font-size: bold;
 }

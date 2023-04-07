@@ -1,43 +1,47 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Task Manager</title>
-	<link rel="stylesheet" href="Todo.css">
-</head>
-<body>
-	<h1>Task Manager</h1>
-    <div class="all">
-	<div id="add-user-form">
-		<h2>Add User</h2>
-		<input type="text" id="username" name="username" placeholder=" Username">
-		<button onclick="addUser()">Add</button>
-	</div>
-	<div id="add-task-form">
-		<h2>Add Task</h2>
-		<input type="text" id="task-name" name="task-name" placeholder="Task name">
-		<input type="date" id="due-date" name="due-date">
-		<button onclick="addTask()">Add</button>
-	</div>
-	<div id="filters">
-		<h2>Search Task</h2>
-		<input type="text" id="filter-task-name" name="filter-task-name" onkeyup="filterTasks()" placeholder="Search task">
-		<select id="filter-status" name="filter-status" onchange="filterTasks()">
-			<option value="">All</option>
-			<option value="pending">Pending</option>
+    <head>
+        <title>Task Manager</title>
+        <link rel="stylesheet" href="Todo.css">
+    </head>
+    <body>
+        <h1>Task Manager</h1>
+        <div class="all">
+            <div id="add-user-form">
+                <h2>Add User</h2>
+                <input type="text" id="username" name="username" placeholder=" Username">
+                <button onclick="addUser()">Add</button>
+            </div>
+            <div id="add-task-form">
+                <h2>Add Task</h2>
+                <input type="text" id="task-name" name="task-name" placeholder="Task name">
+                <input type="date" id="due-date" name="due-date">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div id="filters">
+                <h2>Search Task</h2>
+                <input type="text" id="filter-task-name" name="filter-task-name" onkeyup="filterTasks()" placeholder="Search task">
+                <select id="filter-status" name="filter-status">
+                    <option value="">All</option>
+                    <option value="pending">Pending</option>
 			<option value="completed">Completed</option>
 		</select>
 		<input type="date" id="filter-due-date" name="filter-due-date" onchange="filterTasks()">
+        <button onclick="filterTasks()">Filter</button>
 	</div>
 </div>
-	<table id="task-list">
-		<tr>
-			<th>Task Name</th>
-			<th>Date</th>
-			<th>Status</th>
-			<th>Action</th>
-		</tr>
-	</table>
-	<script src="Todo.js"></script>
+<div id="ren-username">
+    
+</div>
+<table id="task-list">
+    <tr>
+        <th>Task Name</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+</table>
+<script src="Todo.js"></script>
 </body>
 </html>
