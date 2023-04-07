@@ -1,0 +1,89 @@
+.all {
+    width: 600px;
+    /* height: 400px; */
+    margin: 0px 0px 10px 350px;
+}
+h1 {
+	text-align: center;
+    font-family: mv boli;
+    font-weight: bold;
+    animation: color-h 6s infinite ease-in-out;
+}
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: cursive;
+}
+@keyframes color-h{
+    0%{
+        color: white;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: gray;
+    }
+}
+
+#add-user-form, #add-task-form, #filters {
+	margin: 20px 0;
+}
+#username {
+    border: 1px solid;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+}
+
+input[type="text"], input[type="date"], select {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+    box-shadow: 0px 0px 5px black;
+    height: 30px;
+}
+#task-name {
+    width: 300px;
+}
+button {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: aqua;
+    width: 100px;
+	color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: white;
+    color: aqua;
+    border: 1px solid aqua;
+}
+
+table {
+	margin: 20px 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: rgb(8, 140, 140);
+	color: white;
+    font-family: cursive;
+}
+
+.completed {
+	background-color: #4CAF50;
+	color: white;
+}
